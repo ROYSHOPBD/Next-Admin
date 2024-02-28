@@ -10,7 +10,7 @@ const Rightbar = () => {
         <div className={styles.bgContainer}>
           <Image src="/astronaut.png" alt="" fill className={styles.bg} />
         </div>
-        <div className={styles.texts}>
+        <div className={styles.text}>
           <span className={styles.notification}>Available Now</span>
           <h3 className={styles.title}>
             How to use the new version of the admin dashboard?
@@ -29,15 +29,16 @@ const Rightbar = () => {
         <div className={styles.text}>
           <span className={styles.notification}>Comming Soon</span>
           <h3 className={styles.title}>
-            How to use the new version of the admin dashboard?
+            New server action are available, partial per-rendering is comming
+            up!
           </h3>
-          <span className={styles.subtitle}>Takes 4 munites to learn</span>
+          <span className={styles.subtitle}>Boost your productivity</span>
           <p className={styles.desc}>
-            Lorem Ipsum has been the industryy standard
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
           <button className={styles.button}>
             <MdReadMore />
-            Watch
+            Learn
           </button>
         </div>
       </div>

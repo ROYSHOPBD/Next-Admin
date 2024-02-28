@@ -4,8 +4,8 @@
 
 .item {
     position: relative;
-    background-color: linear-gradient(to top #182237, #253352);
-    padding: 20px 0px;
+    background-color: var(--bgSoft);
+    padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -18,11 +18,11 @@
     height: 50%;
 }
 .bg {
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0.2;
 }
 
-.texts {
+.text {
     display: flex;
     flex-direction: column;
     gap: 24px;
