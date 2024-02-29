@@ -49,10 +49,10 @@ const UsersPage = () => {
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
-                  <button className={`${styles.button} ${styles.delete}`}>
-                    Delete
-                  </button>
                 </Link>
+                <button className={`${styles.button} ${styles.delete}`}>
+                  Delete
+                </button>
               </div>
             </td>
           </tr>
