@@ -5,7 +5,7 @@ import styles from "@/app/ui/dashboard/products/products.module.css";
 import Search from "@/app/ui/dashboard/search/search";
 import Pagination from "@/app/ui/dashboard/pagination/pagination";
 
-const productsPage = () => {
+const ProductsPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -45,7 +45,7 @@ const productsPage = () => {
             <td>72</td>
             <td>
               <div className={styles.buttons}>
-                <Link href="/">
+                <Link href="/dashboard/products/test">
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
@@ -63,4 +63,4 @@ const productsPage = () => {
   );
 };
 
-export default productsPage;
+export default ProductsPage;
