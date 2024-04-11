@@ -18,6 +18,17 @@ export const fatchUsers = async (q, page) => {
   }
 };
 
+export const fatchUser = async (id) => {
+  try {
+    connectToDB();
+    const user = await User.findById(id);
+    return user;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Faild to fatch user!");
+  }
+};
+
 export const fatchProducts = async (q, page) => {
   const regex = new RegExp(q, "i");
 
@@ -32,5 +43,16 @@ export const fatchProducts = async (q, page) => {
   } catch (error) {
     console.log(error);
     throw new Error("Faild to fatch products!");
+  }
+};
+
+export const fatchProduct = async (id) => {
+  try {
+    connectToDB();
+    const product = await Product.findById(id);
+    return product;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Faild to fatch product!");
   }
 };
